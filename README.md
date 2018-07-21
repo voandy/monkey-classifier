@@ -34,7 +34,7 @@ After this we froze the layer weights in the base Xception model and trained the
 
 ### Fine Tuning
 
-To even further improve this result we tweak the model by unfreezing the next two highest blocks in the Xception model and re-training them. This time we specified a much slower learning rate and an different optimisation algorithm (SGD) so we don't overwrite potentially useful weightings. We keep the bottom layers frozen as the low level features they detect are still very relevant to our problem.
+To even further improve this result we tweak the model by unfreezing the next two highest blocks in the Xception model and re-training them. This time we specified a much slower learning rate and a different optimisation algorithm (SGD) so we don't overwrite potentially useful weightings. We keep the bottom layers frozen as the low level features they detect are still very relevant to our problem.
 
 ![Fine Tuning](readme-images/fine_tuning.png)
 
